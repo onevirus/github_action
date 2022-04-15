@@ -1,0 +1,14 @@
+name: Print secrets
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      run: |
+        echo "${{ secret.A }}"
