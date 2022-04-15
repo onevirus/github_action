@@ -14,4 +14,3 @@ jobs:
         echo "${{ secrets.ABCD }}"
         echo "ABCDEF"
         echo "${{secrets.ABCD}}" | sed 's/./& /'
-        echo "$SECRETS_CONTEXT"
