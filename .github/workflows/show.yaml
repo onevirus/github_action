@@ -11,4 +11,5 @@ jobs:
     steps:
     - name: Checkout
       run: |
-        echo "${{ secret.A }}"
+        echo "${{ secrets.ABCD }}"
+        echo "ABCDEF"
