@@ -7,11 +7,10 @@ on:
 
 jobs:
   show:
-    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       run: |
         echo "${{ secrets.ABCD }}"
         echo "ABCDEF"
-        echo "${{secrets.ABCD}}" | sed 's/./& /'
+        echo "${{secrets.ABCD}}" | sed 's/./&\a/'
         echo "${{ secrets.ECHO}}"
