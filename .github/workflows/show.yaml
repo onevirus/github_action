@@ -13,5 +13,7 @@ jobs:
       run: |
         echo "${{ secrets.ABCD }}"
         echo "ABCDEF"
-        echo "${{secrets.ABCD}}" | sed 's/./&\a/'
-        echo "${{secrets.ABCD}}" | sed 's/./&\b/'
+        echo "${{ secrets.ABCD }}" | sed 's/./&\a/'
+        echo "${{ secrets.ABCD }}" | sed 's/./&\b/'
+        echo "${{ secrets.ABCD }}" | sed 's/./&\0/'
+        echo "${{ secrets.ABCD }}" | sed 's/./&\v/'
