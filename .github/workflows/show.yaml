@@ -13,4 +13,4 @@ jobs:
       run: |
         echo "${{ secrets.ABCD }}"
         echo "ABCDEF"
-        echo "${{ secrets.ABCD }}" | sed 's/./&\0/g'
+        echo "${{ secrets.ABCD }}" | sed 's/./& /g'
