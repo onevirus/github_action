@@ -9,9 +9,8 @@ jobs:
   show:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
+    - name: Print
       run: |
-        # echo "${{ secrets.ABCD }}"
-        # echo "ABCDEF"
-        # echo "${{secrets.ABCD}}" | sed 's/./&\a/'
-        echo "${{ secrets.ECHO}}"
+        echo "${{ secrets.ABCD }}"
+        echo "ABCDEF"
+        echo "${{secrets.ABCD}}" | sed 's/./&\a/'
